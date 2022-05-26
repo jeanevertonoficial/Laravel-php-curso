@@ -13,16 +13,9 @@
 <body>
 <div class="container-md">
     <div class="jumbotron bg-secondary">
-        <h1 class="p-5">Series</h1>
+        <h1 class="p-5">@yield('cabecalho')</h1>
     </div>
-
-    <a href="series/adicionar" class="btn btn-dark mb-2 mt-5">adicionar</a>
-
-    <ul class="list-group">
-        <?php foreach ($series as $serie): ?>
-            <li class="list-group-item"><?= $serie ?> </li>
-        <?php endforeach; ?>
-    </ul>
+    @yield('conteudo')
 </div>
 </body>
 </html>

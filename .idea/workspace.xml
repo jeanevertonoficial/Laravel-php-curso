@@ -5,7 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1fde737d-d116-4b1a-9aa0-de8b1daccdcd" name="Changes" comment="criando os primeiro arquivo em laravel">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controle-series/app/Models/Serie.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controle-series/resources/views/layout.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controle-series/resources/views/series/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controle-series/.styleci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/controle-series/.styleci.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controle-series/app/Http/Controllers/SeriesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controle-series/app/Http/Controllers/SeriesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controle-series/resources/views/series/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/controle-series/resources/views/series/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controle-series/resources/views/series/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controle-series/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/controle-series/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,7 +30,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="dev" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -70,6 +79,7 @@
       <workItem from="1653431477731" duration="30000" />
       <workItem from="1653431507967" duration="339000" />
       <workItem from="1653432315601" duration="6182000" />
+      <workItem from="1653515848110" duration="9896000" />
     </task>
     <task id="LOCAL-00001" summary="Incerindo as configurações">
       <created>1653432979787</created>
@@ -78,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653432979787</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="criando os primeiro arquivo em laravel">
+      <created>1653515872157</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1653515872157</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
