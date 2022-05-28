@@ -2,29 +2,28 @@
 
 namespace App\Http\Controllers;
 
-use app\Models\Serie;
+use App\Serie;
 use Illuminate\Http\Request;
 
 class SeriesController extends Controller
 {
-   public function index(Request $request) {
+    public function index() {
+        $series = Serie::query()->orderBy('nome')->get();
+        //var_dump($series); exit();
 
-       $series = Serie::all();
-       var_dump($series);
-
-       return view('series.index', compact('series'));
-   }
+        return view('series.index', compact('series'));
+    }
 
     public function create()
     {
         return view('series.create');
-   }
-
+    }
+    // o request é possivel pegar os atributos que vem de um formulario
     public function store(Request $request)
     {
-        $nome = $request->nome;
-        $serie = new Serie();
-        $serie->nome = $nome;
-        var_dump($serie->save());
-   }
+        $serie = Serie::create($request->all());
+
+        echo "Série com id  $serie->id  criada:  $serie->nome ";
+
+    }
 }
