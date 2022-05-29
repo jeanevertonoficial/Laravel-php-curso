@@ -1,8 +1,16 @@
 <!-- fazendo a extenção do arquivo -->
 @extends('layout')
 
+@section('titulo')
+
+    adicionar series
+
+@endsection
+
 @section('cabecalho')
-Adiconar nova Serie
+
+    Adiconar nova Serie
+
 @endsection
 
 @section('conteudo')
@@ -13,6 +21,6 @@ Adiconar nova Serie
             <input type="text" name="nome" id="nome" class="form-control">
         </div>
         <button class="btn btn-primary mt-1">Salvar</button>
-        <a href="/series" class="btn btn-dark mt-1">Voltar</a>
+        <a href="{{ route('listar_series') }}" class="btn btn-dark mt-1">Voltar</a>
     </form>
 @endsection

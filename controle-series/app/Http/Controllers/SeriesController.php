@@ -49,7 +49,7 @@ class SeriesController extends Controller
         /**
          * metodo de retorno em lavarel, muito simples.
          */
-        return redirect('/series');
+        return redirect()->route('listar_series');
         /**
          *echo "Série com id  $serie->id  criada:  $serie->nome ";
          *
@@ -67,6 +67,6 @@ class SeriesController extends Controller
                 "Série removida com sucesso"
             );
 
-        return redirect('/series');
+        return redirect()->route('listar_series');
     }
 }
