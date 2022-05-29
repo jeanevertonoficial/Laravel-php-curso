@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\SeriesFormRequest;
 use App\Serie;
 use Illuminate\Database\Console\Migrations\ResetCommand;
 use Illuminate\Http\Request;
@@ -14,7 +15,7 @@ class SeriesController extends Controller
             ->orderBy('nome')
             ->get();
         /**
-         * metodo que pega a mensagem na requisicão e armazena na session, pelo http.
+         * metodo que pega a mensagem na requisisão e armazena na session, pelo http.
          *
          */
         $mensagem = $request->session()->get('mensagem');
@@ -31,8 +32,13 @@ class SeriesController extends Controller
      *  o request é possivel pegar os atributos que vem de um formulario
      *
      */
-    public function store(Request $request)
+    public function store(SeriesFormRequest $request)
     {
+        /**
+         * validação com lavarel, com o metodo validade.
+         *
+         */
+
         $serie = Serie::create($request->all());
 
         /**
