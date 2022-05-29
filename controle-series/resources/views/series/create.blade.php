@@ -7,7 +7,7 @@ Adiconar nova Serie
 
 @section('conteudo')
     <form method="post">
-        @csrf
+        @csrf <!-- metodo de verificação de seguranga do lavarel, enviar um token e verifica -->
         <div class="form-group">
             <label for="nome">nome</label>
             <input type="text" name="nome" id="nome" class="form-control">
